@@ -118,6 +118,20 @@
 h1 {
     font-family: 'Comfortaa', cursive;
 }
-h5 {
+h5,h4,h6 {
 	font-family: 'Open Sans', sans-serif;
+}
+h5.c {
+	font-family: 'Comfortaa', cursive;
+        color: skyblue;
+		font-weight:bolder;
+	font-size: 45px;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+p.c {
+	font-family: 'Comfortaa', cursive;
+        color: springgreen;
+		font-size: 34px;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
 }

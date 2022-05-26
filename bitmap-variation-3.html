@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Product Page Template</title>
+    <!-- Bootstrap -->
+	  
+	  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	  <link href="mainstyle.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/twentytwenty.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Open+Sans:wght@500&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <div data-snippet="navbar"></div>
+	  
+    <div class="container">
+    	<div class="row">
+          <div class="jumbotron col-12">
+			  
+            <h1 class="text-center"  >Обработка некачественных фото</h1>
+            <h5 class="fw-bold">Суть задания: Обработка фотографий. Для этого имеются <a href="assets/download/Некачестванные фото.zip" class="text-reset ">два варианта некачественных фото</a>(темное и засвеченное). Необходимо их исправить. Можно использовать свои фото. Необходимо рядом поставить исходное и исправленное фото.</h5>
+			
+			  <div class="before-after" style="max-width: 1000px; margin: 0 auto; text-align:center;margin-bottom: 10px;">
+				  <img src="assets/image/variation/3_0.jpg" width="1000" class="imgresp"/>
+				  <img src="assets/image/variation/3.jpg" width="1000" class=" imgresp"/>
+    		  </div>
+
+			  <div class="text-center btn-toolbar d-block mx-auto" role="toolbar" aria-label="Toolbar with button groups" style="margin-top:30px;">
+				  <div class="btn-group me-2 btn-group-lg" role="group" aria-label="1 group">
+					<button type="button" class="btn btn-outline-success">Все в этом разделе</button>
+				  </div>
+				  <div class="btn-group me-2 btn-group-lg" role="group" aria-label="2 group">
+					<button type="button" class="btn btn-outline-info">Работа 1</button>
+					<button type="button" class="btn btn-outline-info">Работа 2</button>
+					<button type="button" class="btn btn-info">Работа 3</button>
+
+				  </div>
+				  <div class="btn-group me-2 btn-group-lg" role="group" aria-label="3 group">
+					<a type="button" class="btn btn-outline-primary" href="bitmap-photo enhancement.html">Улучшение фото</a>
+				  </div>
+			</div>
+		</div>
+	
+			  
+			  
+			  
+         
+		
+    	</div>
+    </div>
+    <div class="container shadow-lg p-3 mb-5 bg-white rounded">
+      <div class="row">
+        <div class="text-center col-lg-3 col-md-6 col-12">
+          <h3>Скачать исходники</h3>
+			<p>Нажмите на кнопку ниж чтобы скачать архив с исходными изображениям.</p>
+          <a class="btn btn-danger btn-lg" href="assets/download/source_var_3.zip" role="button">Скачать</a>
+        </div>
+        <div class="text-center col-lg-4 col-md-6 col-12">
+          <h4>Скачать отредактированую версию</h4>
+          <p>Нажмите на кнопку ниже, чтобы скачать архив с уже отредактированными изображениями.</p>
+          <a class="btn btn-primary btn-lg" href="assets/image/variation/3.jpg" role="button" download>Скачать</a>
+        </div>
+		<div class="text-center col-lg-5 col-md-6 col-12">
+          <h3>Скачать PSD файл</h3>
+          <p>Нажмите на кнопку ниже, чтобы скачать PSD файл, файл без потери качества</p>
+          <a class="btn btn-success btn-lg" href="assets/download/var_3.psd" role="button">Скачать</a>
+			<p></p>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © Roman's website. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap-4.4.1.js"></script>
+	<script src="script.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/jquery.event.move.js"></script>
+  <script src="./js/jquery.twentytwenty.js"></script>
+  <script>
+    $(function () {
+      $(".before-after").twentytwenty({
+        //move_slider_on_hover: true,
+        //no_overlay: true,
+        // orientation: 'vertical',
+         before_label: 'Было',
+         after_label: 'Стало',
+		default_offset_pct: 0.2,
+      });
+    });
+  </script>
+	  <script> 
+		$(function () {
+		  var includes = $('[data-snippet]')
+		  $.each(includes, function () {
+			var file = 'snippets/' + $(this).data('snippet') + '.html'
+			$(this).load(file)
+		  })
+		})
+    </script> 
+  </body>
+</html>

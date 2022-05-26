@@ -18,34 +18,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Open+Sans:wght@500&display=swap" rel="stylesheet"> 
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-      <a class="nav-item" href="INDEX.html"><img src="assets/image/home.svg" alt="" width="42"/> </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Растровая графика
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                   <a class="dropdown-item" href="#">Показать работы в данном разделе</a>
-					<div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="Untitled-3.html">Работа 1. Машина на природе</a>
-                    <a class="dropdown-item" href="#">Работа 2. Машина на горной дороге</a>
-					<a class="dropdown-item" href="#">Работа 3. Машина на природе, едит по дороге</a>
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="#">Улучшить фото плохого качества</a>
-                </div>
-             </li>
-        </ul>
-      </div>
-    </nav>
+    <div data-snippet="navbar"></div>
 	  
     <div class="container">
     	<div class="row">
@@ -56,9 +29,9 @@
 			  
 			  
 			  
-			  <div class="before-after" style="max-width: 827px; margin: 0 auto; text-align:center; margin-bottom: 10px;" >
-				  <img src="assets/image/compare/1_original.jpg" width="827" class="imgresp"/>
-				  <img src="assets/image/compare/1_edit.jpg" width="827" class=" imgresp"/>
+			  <div class="before-after" style="max-width: 450px; margin: 0 auto; text-align:center; margin-bottom: 10px;" >
+				  <img src="assets/image/compare/1_original.jpg" width=" 450px" class="imgresp"/>
+				  <img src="assets/image/compare/1_edit.jpg" width=" 450px" class=" imgresp"/>
     		  </div>
 			
 			  <div class="before-after" style="max-width: 827px; margin: 0 auto; text-align:center;margin-bottom: 10px;">
@@ -81,11 +54,11 @@
 				  <div class="btn-group me-2 btn-group-lg" role="group" aria-label="2 group">
 					<button type="button" class="btn btn-outline-info">Работа 1</button>
 					<button type="button" class="btn btn-outline-info">Работа 2</button>
-					<button type="button" class="btn btn-outline-info">Работа 3</button>
+					<a type="button" class="btn btn-outline-info" href="bitmap-variation-3.html">Работа 3</a>
 
 				  </div>
 				  <div class="btn-group me-2 btn-group-lg" role="group" aria-label="3 group">
-					<button type="button" class="btn btn-outline-primary">Улучшение фото</button>
+					<button type="button" class="btn btn-primary">Улучшение фото</button>
 				  </div>
 			</div>
 		</div>
@@ -145,5 +118,14 @@
       });
     });
   </script>
+	  <script> 
+		$(function () {
+		  var includes = $('[data-snippet]')
+		  $.each(includes, function () {
+			var file = 'snippets/' + $(this).data('snippet') + '.html'
+			$(this).load(file)
+		  })
+		})
+    </script> 
   </body>
 </html>
